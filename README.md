@@ -1,6 +1,6 @@
 # Sitecore Overview
 
-Sitecore is a Web Content Management (WCM) solution on steroids.[^1p8] Sitecore helps you manage the content data in database and provide content to website (by API).
+Sitecore is a Web Content Management (WCM) solution on steroids (p8).[^1] Sitecore helps you manage the content data in database and provide content to website (by API).
 
 5 layer when work with Sitecore:
 
@@ -61,10 +61,10 @@ custome field][add pratice link here] was added config to include new controller
 
 ### 4. **Templates**
    
-Templates is object that have mission to define structure (atribute, behivior) of some type of object. In other way, templates are like class definitions. Content is just an instance of that class.[^1p21]
+Templates is object that have mission to define structure (atribute, behivior) of some type of object. In other way, templates are like class definitions. Content is just an instance of that class (p21).[^1]
 
 - **Data template** are the foundation of your Sitecore deployment. They specify the data fields and many other settings that can be applied to content upon creation.
-- **Standard value** extend the data template by introducting how to set default setting and values when items are created.[^1p77]
+- **Standard value** extend the data template by introducting how to set default setting and values when items are created (p77).[^1]
 - **Token** is a value delegate for value of instant. In other way, a token in Sitecore is a replaceable parameter that can be used in templates, layouts, and other content items. Such as replacing "$name" with the name of the item when it is created.
 - **Shared property** is field in template control the scope of field's effect to all inherit. In other explain, A field that is shared shares its value to all its instant (languares and version). See practice [add link pratice here]. 
 - **Unversioned property** is field in template control the scope of that field's effect in languares. A field that is unversioned shares its value with all versions in the language scope. See pratice [add link pratice here].
@@ -82,7 +82,7 @@ Components is concept to point the thing you can see and have action in web. For
 
 ### 6. **Placeholder**
    
-Placeholders is which marketers can add or remove components. It can be configured to allow certain components to help enforce a standard information architecture.[^1p24]
+Placeholders is which marketers can add or remove components. It can be configured to allow certain components to help enforce a standard information architecture (p24).[^1]
 
 - **Static placeholder** is placeholder that is defined, sticked, or referenced to a layout. It cannot be moved or changed in position, but it can be configured.
 - **Dynamic placeholder** is placeholder that is not sticked or  the layout that it is working on.
@@ -91,4 +91,4 @@ Placeholders is which marketers can add or remove components. It can be configur
    
 Layout tell Sitecore where to render the component. It contains one or more content placeholders
 
-[^1p8], [^1p21], [^1p24], [^1p77]: *Professional SiteCore 8 Development: A Complete Guide to Solutions and Best Practices: Wicklund, Phil, Wilkerson, Jason, n.d., pp. 8, 21, 24, 77*
+[^1]: *Professional SiteCore 8 Development: A Complete Guide to Solutions and Best Practices: Wicklund, Phil, Wilkerson, Jason, n.d., pp. 8, 21, 24, 77*
