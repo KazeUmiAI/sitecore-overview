@@ -20,8 +20,8 @@ Sitecore is a Web Content Management (WCM) solution on steroids (p8).[^1] Siteco
     - [5. **Component**](#5-component)
     - [6. **Placeholder**](#6-placeholder)
     - [7. **Layout**](#7-layout)
-    - [8. **Tanent in SXA** Add reference here](#8-tanent-in-sxa-add-reference-here)
-    - [9. **Site in SXA** Add reference here](#9-site-in-sxa-add-reference-here)
+    - [8. **Tanent in SXA** \[^4\]](#8-tanent-in-sxa-4)
+    - [9. **Site in SXA** \[^5\]](#9-site-in-sxa-5)
   - [**Site core pratice**](#site-core-pratice)
     - [1. **Create tanent and site**](#1-create-tanent-and-site)
       - [1. **Create Modules**](#1-create-modules)
@@ -68,7 +68,7 @@ custome field][add pratice link here].
 **Sitecore patches** is a file that used to add or change configuration settings in Sitecore without having to edit the files directly. Almost patch files are placed in **App_Config/Include**. You can see in [pratice of
 custome field][add pratice link here] was added config to include new controller rendering dll to sitecore.
 
-**Sitecore load order** divides into layers (folder in App_Config). By default, Sitecore loads its configuration files in order: Basic system files (layers.config, ConnectionStrings.config, Web.config) => Sitecore layer => Modules layer => Custom layer => Enviroment layer, location of each layer is configured in **layer.config**. Each layer, by default, Sitecore goes through all the subfolders in the layer recursively and loads the files in each subfolder in alphabetical order. Files in the root of a folder are merged before files in subfolders within the folder. [Add reference here](https://doc.sitecore.com/xp/en/developers/102/platform-administration-and-architecture/configuration-layers.html)
+**Sitecore load order** divides into layers (folder in App_Config). By default, Sitecore loads its configuration files in order: Basic system files (layers.config, ConnectionStrings.config, Web.config) => Sitecore layer => Modules layer => Custom layer => Enviroment layer, location of each layer is configured in **layer.config**. Each layer, by default, Sitecore goes through all the subfolders in the layer recursively and loads the files in each subfolder in alphabetical order. Files in the root of a folder are merged before files in subfolders within the folder. [^6]
 
 
 ### 4. **Templates**
@@ -89,8 +89,8 @@ Components is concept to point the thing you can see and have action in web. For
 - **View Rendering** is component that is referenced to "View" in .Net. It content will base on itself or parent component.
 - **Controller rendering** is component that is referenced to "Action" in "Controller". Because it base on action and controller, It's data and It's view can be modify dynamic.
 - **Inheritance template** mean template can be inherit from other template. However you shouldn't make it deep or become circle. For exp: Template B inherit from A, C inherit B but A inherit C. So datasource template and page types templates should inherit from interface templates.
-- **Datasource location** specify where the user is allowed to look for the data source.[Add reference here](https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html) 
-- **Datasource Template** specify the types of data sources users can create.[Add reference here](https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html)
+- **Datasource location** specify where the user is allowed to look for the data source.[^2] 
+- **Datasource Template** specify the types of data sources users can create.[^3]
 
 ### 6. **Placeholder**
    
@@ -103,7 +103,7 @@ Placeholders is which marketers can add or remove components. It can be configur
    
 Layout tell Sitecore where to render the component. It contains one or more content placeholders
 
-### 8. **Tanent in SXA** [Add reference here](https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/the-sxa-items-in-the-content-editor.html#the-tenant-items)
+### 8. **Tanent in SXA** [^4]
     
    In the context of Sitecore Experience Accelerator (SXA), atenant is a top-level container for the sites underneath. SXA supports multitenancy, which means that you can run multiple sites on a single instance of Sitecore. 
    
@@ -111,7 +111,7 @@ Layout tell Sitecore where to render the component. It contains one or more cont
    
    When you use the Tenant creation wizard to quickly set up your tenant and site, by default SXA creates templates, themes, and media content, with the paths stored on the tenant item you just created. 
 
-### 9. **Site in SXA** [Add reference here](https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/create-a-tenant-and-a-site.html)
+### 9. **Site in SXA** [^5]
     
     Sites are the items that represent the website and consist of pages, data, designs, and partial layouts.
 
@@ -474,3 +474,8 @@ Layout tell Sitecore where to render the component. It contains one or more cont
 5. 
 
 [^1]: *Professional SiteCore 8 Development: A Complete Guide to Solutions and Best Practices: Wicklund, Phil, Wilkerson, Jason, n.d., pp. 8, 21, 24, 77*
+[^2]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html]
+[^3]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html]
+[^4]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/the-sxa-items-in-the-content-editor.html#the-tenant-items]
+[^5]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/create-a-tenant-and-a-site.html]
+[^6]: https://doc.sitecore.com/xp/en/developers/102/platform-administration-and-architecture/configuration-layers.html
