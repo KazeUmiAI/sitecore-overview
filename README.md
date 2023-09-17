@@ -474,8 +474,8 @@ Layout tell Sitecore where to render the component. It contains one or more cont
 5. 
 
 [^1]: *Professional SiteCore 8 Development: A Complete Guide to Solutions and Best Practices: Wicklund, Phil, Wilkerson, Jason, n.d., pp. 8, 21, 24, 77*
-[^2]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html]
-[^3]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html]
-[^4]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/the-sxa-items-in-the-content-editor.html#the-tenant-items]
-[^5]: [https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/create-a-tenant-and-a-site.html]
+[^2]: https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html
+[^3]: https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/data-sources.html
+[^4]: https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/the-sxa-items-in-the-content-editor.html#the-tenant-items
+[^5]: https://doc.sitecore.com/xp/en/developers/sxa/102/sitecore-experience-accelerator/create-a-tenant-and-a-site.html
 [^6]: https://doc.sitecore.com/xp/en/developers/102/platform-administration-and-architecture/configuration-layers.html
